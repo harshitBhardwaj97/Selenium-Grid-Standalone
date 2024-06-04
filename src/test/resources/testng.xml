@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SeleniumGridSuite" verbose="1">
+   
+    <test name="ChromeBrowserTest">
+		<parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="selenium.grid.example.SeleniumGridTest"/>
+        </classes>
+    </test>
+    
+    <test name="SafariBrowserTest">
+		<parameter name="browser" value="safari"/>
+        <classes>
+            <class name="selenium.grid.example.SeleniumGridTest"/>
+        </classes>
+    </test>
+    
+    <test name="FirefoxBrowserTest">
+		<parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="selenium.grid.example.SeleniumGridTest"/>
+        </classes>
+    </test>
+    
+    <test name="EdgeBrowserTest">
+		<parameter name="browser" value="MicrosoftEdge"/>
+        <classes>
+            <class name="selenium.grid.example.SeleniumGridTest"/>
+        </classes>
+    </test>
+    
+</suite>
